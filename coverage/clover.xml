@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1707982973843" clover="3.2.0">
+  <project timestamp="1707982973843" name="All files">
+    <metrics statements="18" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0" elements="27" coveredelements="0" complexity="0" loc="18" ncloc="18" packages="2" files="7" classes="7">
+      <package name="basic">
+        <metrics statements="13" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <file name="1.js" path="C:\sarath\learning\sample_jest\components\basic\1.js">
+          <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        </file>
+        <file name="child.js" path="C:\sarath\learning\sample_jest\components\basic\child.js">
+          <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+        </file>
+        <file name="counter.js" path="C:\sarath\learning\sample_jest\components\basic\counter.js">
+          <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="12" count="0" type="stmt"/>
+          <line num="19" count="0" type="stmt"/>
+        </file>
+        <file name="learning.js" path="C:\sarath\learning\sample_jest\components\basic\learning.js">
+          <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+        </file>
+        <file name="parent.js" path="C:\sarath\learning\sample_jest\components\basic\parent.js">
+          <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+        </file>
+        <file name="sum.js" path="C:\sarath\learning\sample_jest\components\basic\sum.js">
+          <metrics statements="7" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="3" coveredmethods="0"/>
+          <line num="1" count="0" type="stmt"/>
+          <line num="16" count="0" type="stmt"/>
+          <line num="25" count="0" type="cond" truecount="0" falsecount="2"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="28" count="0" type="stmt"/>
+          <line num="32" count="0" type="stmt"/>
+          <line num="33" count="0" type="stmt"/>
+        </file>
+      </package>
+      <package name="todo">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <file name="todoApp.js" path="C:\sarath\learning\sample_jest\components\todo\todoApp.js">
+          <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+          <line num="2" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="25" count="0" type="stmt"/>
+          <line num="26" count="0" type="stmt"/>
+          <line num="27" count="0" type="stmt"/>
+        </file>
+      </package>
+    </metrics>
+  </project>
+</coverage>
