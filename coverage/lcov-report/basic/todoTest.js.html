@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Code coverage report for todo/todoApp.js</title>
+    <title>Code coverage report for basic/todoTest.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\prettify.css" />
     <link rel="stylesheet" href="..\base.css" />
@@ -16,12 +16,12 @@
 <div class='wrapper'>
   <div class='pad1'>
     <h1>
-      <a href="..\index.html">All files</a> / <a href="index.html">todo</a> todoApp.js
+      <a href="..\index.html">All files</a> / <a href="index.html">basic</a> todoTest.js
     </h1>
     <div class='clearfix'>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -52,9 +52,7 @@
 27
 28
 29
-30
-31</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+30</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -67,7 +65,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -77,27 +75,26 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
-<span class="cstat-no" title="statement not covered" >Vue.component("todo", {</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">module.exports = {
     template: `
     &lt;div class="todo"&gt;
         &lt;h4&gt;Todo&lt;/h4&gt;
         &lt;input data-test="new-todo" v-model="newTodo"/&gt;
         &lt;button @click="add"&gt;Add&lt;/button&gt;
         &lt;ul&gt;
-            &lt;li v-for="todo in todoList"  data-test="todo"&gt;{{todo.text}}&lt;/li&gt;
+            &lt;li v-for="todo in todoList" data-test="todo"&gt;{{todo.text}}&lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
   `,
 &nbsp;
-    data() {<span class="fstat-no" title="function not covered" ></span>
-<span class="cstat-no" title="statement not covered" >        return {</span>
+    data() {
+        return {
             todoList: [
                 // {id:1,text:"sam",completed:false}
             ],
@@ -106,14 +103,14 @@
     },
 &nbsp;
     methods: {
-        add() {<span class="fstat-no" title="function not covered" ></span>
-            let newObject = <span class="cstat-no" title="statement not covered" >{ id: this.todoList.length + 1, text: this.newTodo, completed: false }</span>
-<span class="cstat-no" title="statement not covered" >            this.todoList.push(newObject)</span>
-<span class="cstat-no" title="statement not covered" >            this.newTodo = ''</span>
+        add() {
+            let newObject = { id: this.todoList.length + 1, text: this.newTodo, completed: false }
+            this.todoList.push(newObject)
+            this.newTodo = ''
         }
     }
 &nbsp;
-})</pre></td></tr>
+}</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->

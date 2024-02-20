@@ -1,12 +1,11 @@
-
-Vue.component("todo", {
+module.exports = {
     template: `
     <div class="todo">
         <h4>Todo</h4>
         <input data-test="new-todo" v-model="newTodo"/>
         <button @click="add">Add</button>
         <ul>
-            <li v-for="todo in todoList"  data-test="todo">{{todo.text}}</li>
+            <li v-for="todo in todoList" data-test="todo">{{todo.text}}</li>
         </ul>
     </div>
   `,
@@ -28,4 +27,4 @@ Vue.component("todo", {
         }
     }
 
-})
+}

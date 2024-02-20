@@ -1,18 +1,18 @@
 module.exports = {
     moduleFileExtensions: ['js', 'json', 'vue'],
     transform: {
-        // '^.+\\.vue$': 'vue-jest',
+        '^.+\\.vue$': 'vue-jest',
         '^.+\\.js$': 'babel-jest',
     },
     // testEnvironment: "node",
-    // extensionsToTreatAsEsm: [".js", ".mjs"],
+    // extensionsToTreatAsEsm: [".js", ".mjs",".vue"],
     // testEnvironment: 'jsdom',
     testEnvironment: 'jsdom',
     setupFiles: ['./setup.js'],
 
     // for code coverage
     collectCoverage: true,
-    collectCoverageFrom: ["components/**/*.{js}"],
+    collectCoverageFrom: ["components/**/*.js"],
     coverageThreshold: {
         global: {
             lines: 80

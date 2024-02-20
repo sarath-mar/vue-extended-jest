@@ -42,15 +42,13 @@ function getFileContent(fileName,componentName) {
                     ) {
                         componentContent = fileContent.substring(path.node.arguments[1].start, path.node.arguments[1].end);
                     }
-                    // if(componentName==="learning"){
-                    //     console.log("start : ",path.node.arguments[1].start);
-                    //     console.log("end : ",path.node.arguments[1].end);
-                    // }
                 },
             });
             if (componentContent) {
-                const counterComponent = eval(`(${componentContent})`)
-                return resolve(counterComponent)
+                componentContent = eval(`(${componentContent})`)
+                // const counterComponent = eval(`(${componentContent})`)
+                // return resolve(counterComponent)
+                return resolve(componentContent)
             } else {
                 console.error('Vue.component declaration not found in the file.');
                 return reject("Vue.component not found")
@@ -62,6 +60,13 @@ function getFileContent(fileName,componentName) {
         }
     })
 }
+
+// const fs = require('fs');
+
+
+// getFileContentStream()
+
+
 module.exports = {
     getFileContent
 }

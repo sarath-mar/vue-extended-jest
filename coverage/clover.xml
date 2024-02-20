@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1707982973843" clover="3.2.0">
-  <project timestamp="1707982973843" name="All files">
-    <metrics statements="18" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0" elements="27" coveredelements="0" complexity="0" loc="18" ncloc="18" packages="2" files="7" classes="7">
+<coverage generated="1708424612691" clover="3.2.0">
+  <project timestamp="1708424612692" name="All files">
+    <metrics statements="23" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="7" coveredmethods="0" elements="32" coveredelements="5" complexity="0" loc="23" ncloc="23" packages="2" files="8" classes="8">
       <package name="basic">
-        <metrics statements="13" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
+        <metrics statements="18" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="5" coveredmethods="0"/>
         <file name="1.js" path="C:\sarath\learning\sample_jest\components\basic\1.js">
           <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         </file>
@@ -34,6 +34,14 @@
           <line num="28" count="0" type="stmt"/>
           <line num="32" count="0" type="stmt"/>
           <line num="33" count="0" type="stmt"/>
+        </file>
+        <file name="todoTest.js" path="C:\sarath\learning\sample_jest\components\basic\todoTest.js">
+          <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+          <line num="1" count="1" type="stmt"/>
+          <line num="14" count="3" type="stmt"/>
+          <line num="24" count="1" type="stmt"/>
+          <line num="25" count="1" type="stmt"/>
+          <line num="26" count="1" type="stmt"/>
         </file>
       </package>
       <package name="todo">

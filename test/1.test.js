@@ -8,7 +8,7 @@ describe('1.js', async () => {
     let wrapper
     it('renders 1 props.message when passed', async () => {
         // file = await getFileContent("learning.js", "learning")
-        wrapper = shallowMount(one,{
+        wrapper = mount(one,{
             propsData:{
                 message:"hello"
             }

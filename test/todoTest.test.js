@@ -1,13 +1,16 @@
-import { mount, shallowMount } from '@vue/test-utils'
-import { getFileContent } from '../utils';
+import { mount ,shallowMount} from '@vue/test-utils'
+// import { getFileContent } from '../utils';
+import file from "../components/basic/todoTest"
 
 
-describe('todoApp.js', async () => {
-    let file
+// import { mount, shallowMount } from '@vue/test-utils'
+// import { getFileContent } from '../utils';
+
+describe('todoAppTest.js', async () => {
+    // let file
     let wrapper
     it('Initial is vue instance', async () => {
-        file = await getFileContent("./components/todo/todoApp.js", "todo")
-        
+        // file = await getFileContent("./components/todo/todoApp.js", "todo")
         wrapper = mount(file, {
 
         })
@@ -15,7 +18,7 @@ describe('todoApp.js', async () => {
         expect(wrapper.vm).toBeTruthy()
     })
     it('Initial render of todo app', async () => {
-        file = await getFileContent("./components/todo/todoApp.js", "todo")
+        // file = await getFileContent("./components/todo/todoApp.js", "todo")
         wrapper = mount(file, {
 
         })
@@ -23,23 +26,16 @@ describe('todoApp.js', async () => {
         let todo = wrapper.find('[data-test="todo"]')
         expect(todo.exists()).toBe(false)
     })
-    // it('add new value to todo', async () => {
-    //     let todo = wrapper.find('[data-test="todo"]')
-    //     expect(todo.exists()).toBe(false)
-    // })
-
     it("called addNew fn when click on button", async () => {
-        // wrapper.setMe
-        // wrapper = mount(file, {
-
-        // })
-        let add1 = jest.fn()
+       
+        let add = jest.fn()
         wrapper.setMethods({
-            add: add1
+            add: add
+
         })
        
         wrapper.find('button').trigger("click")
-        expect(add1).toHaveBeenCalled()
+        expect(add).toHaveBeenCalled()
     })
     it("add new todo", async () => {
         wrapper = mount(file, {
